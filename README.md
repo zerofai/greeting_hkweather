@@ -17,6 +17,12 @@ Code and Dockerfile inside ./greeting/Dockerfile
 A service that will reach out to HKO to get current werather info of Hong Kong
 Code and Dockerfile inside ./weather/Dockerfile
 
+# To Test locally 
+```
+export GREETING_HOSTNAME=127.0.0.1:5001
+export WEATHER_HOSTNAME=127.0.0.1:5002
+```
+
 # To Build the image on M1 for x64
 ```
 docker build --platform linux/amd64 -t imagename .
