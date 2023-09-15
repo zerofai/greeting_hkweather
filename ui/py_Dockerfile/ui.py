@@ -28,5 +28,10 @@ def get_weather():
     weather = weather_response.json()
     return weather
 
+@app.route('/', defaults={'path': ''})
+@app.route('/<path:path>')
+def fallback(path):
+    return jsonify(message="Sorry, please use the right endpoint")
+
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)

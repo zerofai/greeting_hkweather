@@ -102,7 +102,7 @@ spec:
             requests:
               cpu: 100m
               memory: 128Mi
-          image: zerofai/greeting-hkw_weather:202309141505
+          image: zerofai/greeting-hkw_weather:202309150841
           ports:
             - containerPort: 5002
 ---
@@ -179,7 +179,7 @@ spec:
             requests:
               cpu: 100m
               memory: 128Mi
-          image: zerofai/greeting-hkw_ui:202309141537
+          image: zerofai/greeting-hkw_ui:1980-202309151059
           env:
           - name: GREETING_HOSTNAME
             value: greeting-hkw-greeting:5001
